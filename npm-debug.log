@@ -1,0 +1,348 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'pm2',
+1 verbose cli   '--save' ]
+2 info using npm@2.15.5
+3 info using node@v4.4.5
+4 verbose install initial load of D:\EasyTrades\fe\etfront\package.json
+5 warn package.json easytradies@1.0.0 No description
+6 warn package.json easytradies@1.0.0 No repository field.
+7 warn package.json easytradies@1.0.0 No README data
+8 verbose installManyTop reading scoped package data from D:\EasyTrades\fe\etfront\node_modules\express\package.json
+9 verbose installManyTop reading scoped package data from D:\EasyTrades\fe\etfront\node_modules\path\package.json
+10 verbose installManyTop reading scoped package data from D:\EasyTrades\fe\etfront\node_modules\pm2\package.json
+11 info package.json path@0.12.7 path is also the name of a node core module.
+12 verbose readDependencies loading dependencies from D:\EasyTrades\fe\etfront\package.json
+13 verbose install pm2 is installed as 2.4.6
+14 silly cache add args [ 'pm2', null ]
+15 verbose cache add spec pm2
+16 silly cache add parsed spec Result {
+16 silly cache add   raw: 'pm2',
+16 silly cache add   scope: null,
+16 silly cache add   name: 'pm2',
+16 silly cache add   rawSpec: '',
+16 silly cache add   spec: 'latest',
+16 silly cache add   type: 'tag' }
+17 silly addNamed pm2@latest
+18 verbose addNamed "latest" is being treated as a dist-tag for pm2
+19 info addNameTag [ 'pm2', 'latest' ]
+20 silly mapToRegistry name pm2
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://registry.npmjs.org/
+23 silly mapToRegistry data Result {
+23 silly mapToRegistry   raw: 'pm2',
+23 silly mapToRegistry   scope: null,
+23 silly mapToRegistry   name: 'pm2',
+23 silly mapToRegistry   rawSpec: '',
+23 silly mapToRegistry   spec: 'latest',
+23 silly mapToRegistry   type: 'tag' }
+24 silly mapToRegistry uri https://registry.npmjs.org/pm2
+25 verbose addNameTag registry:https://registry.npmjs.org/pm2 not in flight; fetching
+26 verbose request uri https://registry.npmjs.org/pm2
+27 verbose request no auth needed
+28 info attempt registry request try #1 at 7:16:58 PM
+29 verbose request id 8efc50b7805a036b
+30 verbose etag W/"59104a00-8b05e"
+31 verbose lastModified Mon, 08 May 2017 10:35:44 GMT
+32 http request GET https://registry.npmjs.org/pm2
+33 http 304 https://registry.npmjs.org/pm2
+34 verbose headers { date: 'Mon, 08 May 2017 13:46:58 GMT',
+34 verbose headers   via: '1.1 varnish',
+34 verbose headers   'cache-control': 'max-age=300',
+34 verbose headers   etag: 'W/"59104a00-8b05e"',
+34 verbose headers   age: '250',
+34 verbose headers   connection: 'keep-alive',
+34 verbose headers   'x-served-by': 'cache-sin18021-SIN',
+34 verbose headers   'x-cache': 'HIT',
+34 verbose headers   'x-cache-hits': '2',
+34 verbose headers   'x-timer': 'S1494251218.111199,VS0,VE0',
+34 verbose headers   vary: 'Accept-Encoding' }
+35 silly get cb [ 304,
+35 silly get   { date: 'Mon, 08 May 2017 13:46:58 GMT',
+35 silly get     via: '1.1 varnish',
+35 silly get     'cache-control': 'max-age=300',
+35 silly get     etag: 'W/"59104a00-8b05e"',
+35 silly get     age: '250',
+35 silly get     connection: 'keep-alive',
+35 silly get     'x-served-by': 'cache-sin18021-SIN',
+35 silly get     'x-cache': 'HIT',
+35 silly get     'x-cache-hits': '2',
+35 silly get     'x-timer': 'S1494251218.111199,VS0,VE0',
+35 silly get     vary: 'Accept-Encoding' } ]
+36 verbose etag https://registry.npmjs.org/pm2 from cache
+37 verbose get saving pm2 to C:\Users\nuwan\AppData\Roaming\npm-cache\registry.npmjs.org\pm2\.cache.json
+38 verbose correctMkdir C:\Users\nuwan\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+39 silly addNameTag next cb for pm2 with tag latest
+40 silly addNamed pm2@2.4.6
+41 verbose addNamed "2.4.6" is a plain semver version for pm2
+42 silly cache afterAdd pm2@2.4.6
+43 verbose afterAdd C:\Users\nuwan\AppData\Roaming\npm-cache\pm2\2.4.6\package\package.json not in flight; writing
+44 verbose correctMkdir C:\Users\nuwan\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+45 verbose afterAdd C:\Users\nuwan\AppData\Roaming\npm-cache\pm2\2.4.6\package\package.json written
+46 silly install resolved [ { name: 'pm2',
+46 silly install resolved     preferGlobal: true,
+46 silly install resolved     version: '2.4.6',
+46 silly install resolved     engines: { node: '>=0.10' },
+46 silly install resolved     directories: { bin: './bin', lib: './lib', example: './examples' },
+46 silly install resolved     author:
+46 silly install resolved      { name: 'Strzelewicz Alexandre',
+46 silly install resolved        email: 'alexandre@keymetrics.io',
+46 silly install resolved        url: 'https://keymetrics.io' },
+46 silly install resolved     maintainers: [ [Object] ],
+46 silly install resolved     contributors:
+46 silly install resolved      [ [Object],
+46 silly install resolved        [Object],
+46 silly install resolved        [Object],
+46 silly install resolved        [Object],
+46 silly install resolved        [Object],
+46 silly install resolved        [Object],
+46 silly install resolved        [Object],
+46 silly install resolved        [Object],
+46 silly install resolved        [Object],
+46 silly install resolved        [Object],
+46 silly install resolved        [Object],
+46 silly install resolved        [Object],
+46 silly install resolved        [Object] ],
+46 silly install resolved     homepage: 'http://pm2.io/',
+46 silly install resolved     description: 'Production process manager for Node.JS applications with a built-in load balancer.',
+46 silly install resolved     main: 'index.js',
+46 silly install resolved     scripts:
+46 silly install resolved      { test: 'NODE_ENV=test bash test/pm2_programmatic_tests.sh && NODE_ENV=test bash test/pm2_behavior_tests.sh',
+46 silly install resolved        'bench-pmx': 'pm2 delete all; pm2 install pm2-probe; node examples/pmx/app.js; pm2 ls' },
+46 silly install resolved     keywords:
+46 silly install resolved      [ 'cli',
+46 silly install resolved        'fault tolerant',
+46 silly install resolved        'sysadmin',
+46 silly install resolved        'tools',
+46 silly install resolved        'pm2',
+46 silly install resolved        'logs',
+46 silly install resolved        'log',
+46 silly install resolved        'json',
+46 silly install resolved        'express',
+46 silly install resolved        'hapi',
+46 silly install resolved        'kraken',
+46 silly install resolved        'reload',
+46 silly install resolved        'microservice',
+46 silly install resolved        'programmatic',
+46 silly install resolved        'harmony',
+46 silly install resolved        'node-pm2',
+46 silly install resolved        'production',
+46 silly install resolved        'keymetrics',
+46 silly install resolved        'node.js monitoring',
+46 silly install resolved        'strong-pm',
+46 silly install resolved        'deploy',
+46 silly install resolved        'deployment',
+46 silly install resolved        'daemon',
+46 silly install resolved        'supervisor',
+46 silly install resolved        'nodemon',
+46 silly install resolved        'pm2.io',
+46 silly install resolved        'ghost',
+46 silly install resolved        'ghost production',
+46 silly install resolved        'monitoring',
+46 silly install resolved        'process manager',
+46 silly install resolved        'forever',
+46 silly install resolved        'profiling',
+46 silly install resolved        'probes',
+46 silly install resolved        'forever-monitor',
+46 silly install resolved        'keep process alive',
+46 silly install resolved        'process configuration',
+46 silly install resolved        'clustering',
+46 silly install resolved        'cluster cli',
+46 silly install resolved        'cluster',
+46 silly install resolved        'cron',
+46 silly install resolved        'devops',
+46 silly install resolved        'dev ops' ],
+46 silly install resolved     bin:
+46 silly install resolved      { pm2: './bin/pm2',
+46 silly install resolved        rundev: './bin/rundev',
+46 silly install resolved        'pm2-dev': './bin/pm2-dev',
+46 silly install resolved        'pm2-docker': './bin/pm2-docker' },
+46 silly install resolved     dependencies:
+46 silly install resolved      { async: '1.5',
+46 silly install resolved        blessed: '^0.1.81',
+46 silly install resolved        chalk: '^1.1',
+46 silly install resolved        chokidar: '^1.6.1',
+46 silly install resolved        'cli-table': '0.3.1',
+46 silly install resolved        commander: '^2.9',
+46 silly install resolved        cron: '1.2.1',
+46 silly install resolved        debug: '^2.3.2',
+46 silly install resolved        eventemitter2: '1.0.5',
+46 silly install resolved        fclone: '1.0.11',
+46 silly install resolved        mkdirp: '0.5.1',
+46 silly install resolved        moment: '^2.15',
+46 silly install resolved        nssocket: '0.6.0',
+46 silly install resolved        pidusage: '^1.1.0',
+46 silly install resolved        'pm2-axon': '3.0.2',
+46 silly install resolved        'pm2-axon-rpc': '0.4.5',
+46 silly install resolved        'pm2-deploy': '^0.3.5',
+46 silly install resolved        'pm2-multimeter': '^0.1.2',
+46 silly install resolved        pmx: '^1.1.0',
+46 silly install resolved        semver: '^5.2',
+46 silly install resolved        shelljs: '0.7.7',
+46 silly install resolved        'source-map-support': '^0.4.6',
+46 silly install resolved        'sprintf-js': '~1.0.2',
+46 silly install resolved        vizion: '^0.2',
+46 silly install resolved        yamljs: '0.2.8',
+46 silly install resolved        gkt: 'https://tgz.pm2.io/gkt-1.0.0.tgz' },
+46 silly install resolved     devDependencies: { mocha: '^3', should: '^11' },
+46 silly install resolved     optionalDependencies: { gkt: 'https://tgz.pm2.io/gkt-1.0.0.tgz' },
+46 silly install resolved     bugs: { url: 'https://github.com/Unitech/pm2/issues' },
+46 silly install resolved     repository: { type: 'git', url: 'git://github.com/Unitech/pm2.git' },
+46 silly install resolved     license: 'AGPL-3.0',
+46 silly install resolved     gitHead: 'bede36c78f6f54d054a7bc30e330fecc0a6908e6',
+46 silly install resolved     _id: 'pm2@2.4.6',
+46 silly install resolved     _shasum: '8157a7c88a537ce9d2193063aeb3aee44c5129bf',
+46 silly install resolved     _from: 'pm2@latest',
+46 silly install resolved     _npmVersion: '2.15.11',
+46 silly install resolved     _nodeVersion: '4.8.2',
+46 silly install resolved     _npmUser: { name: 'tknew', email: 'strzelewicz.alexandre@gmail.com' },
+46 silly install resolved     dist:
+46 silly install resolved      { shasum: '8157a7c88a537ce9d2193063aeb3aee44c5129bf',
+46 silly install resolved        tarball: 'https://registry.npmjs.org/pm2/-/pm2-2.4.6.tgz' },
+46 silly install resolved     _npmOperationalInternal:
+46 silly install resolved      { host: 'packages-18-east.internal.npmjs.com',
+46 silly install resolved        tmp: 'tmp/pm2-2.4.6.tgz_1493246738363_0.8987839270848781' },
+46 silly install resolved     _resolved: 'https://registry.npmjs.org/pm2/-/pm2-2.4.6.tgz',
+46 silly install resolved     readme: 'ERROR: No README data found!' } ]
+47 info install pm2@2.4.6 into D:\EasyTrades\fe\etfront
+48 info installOne pm2@2.4.6
+49 verbose installOne of pm2 to D:\EasyTrades\fe\etfront not in flight; installing
+50 verbose correctMkdir C:\Users\nuwan\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
+51 verbose lock using C:\Users\nuwan\AppData\Roaming\npm-cache\_locks\pm2-422afe426d8f2b5f.lock for D:\EasyTrades\fe\etfront\node_modules\pm2
+52 silly install write writing pm2 2.4.6 to D:\EasyTrades\fe\etfront\node_modules\pm2
+53 verbose unbuild node_modules\pm2
+54 info preuninstall pm2@2.4.6
+55 info uninstall pm2@2.4.6
+56 verbose unbuild rmStuff pm2@2.4.6 from D:\EasyTrades\fe\etfront\node_modules
+57 silly gentlyRm D:\EasyTrades\fe\etfront\node_modules\.bin\pm2.cmd is being gently removed
+58 silly gentlyRm verifying D:\EasyTrades\fe\etfront is an npm working directory
+59 silly gentlyRm D:\EasyTrades\fe\etfront\node_modules\.bin\rundev.cmd is being gently removed
+60 silly gentlyRm verifying D:\EasyTrades\fe\etfront is an npm working directory
+61 silly gentlyRm D:\EasyTrades\fe\etfront\node_modules\.bin\pm2-dev.cmd is being gently removed
+62 silly gentlyRm verifying D:\EasyTrades\fe\etfront is an npm working directory
+63 silly gentlyRm D:\EasyTrades\fe\etfront\node_modules\.bin\pm2-docker.cmd is being gently removed
+64 silly gentlyRm verifying D:\EasyTrades\fe\etfront is an npm working directory
+65 silly gentlyRm containing path D:\EasyTrades\fe\etfront is under npm's control, in D:\EasyTrades\fe\etfront
+66 silly gentlyRm deletion target D:\EasyTrades\fe\etfront\node_modules\.bin\pm2.cmd is under D:\EasyTrades\fe\etfront
+67 verbose gentlyRm vacuuming from D:\EasyTrades\fe\etfront\node_modules\.bin\pm2.cmd up to D:\EasyTrades\fe\etfront
+68 silly gentlyRm containing path D:\EasyTrades\fe\etfront is under npm's control, in D:\EasyTrades\fe\etfront
+69 silly gentlyRm deletion target D:\EasyTrades\fe\etfront\node_modules\.bin\rundev.cmd is under D:\EasyTrades\fe\etfront
+70 verbose gentlyRm vacuuming from D:\EasyTrades\fe\etfront\node_modules\.bin\rundev.cmd up to D:\EasyTrades\fe\etfront
+71 silly gentlyRm containing path D:\EasyTrades\fe\etfront is under npm's control, in D:\EasyTrades\fe\etfront
+72 silly gentlyRm deletion target D:\EasyTrades\fe\etfront\node_modules\.bin\pm2-dev.cmd is under D:\EasyTrades\fe\etfront
+73 verbose gentlyRm vacuuming from D:\EasyTrades\fe\etfront\node_modules\.bin\pm2-dev.cmd up to D:\EasyTrades\fe\etfront
+74 silly gentlyRm containing path D:\EasyTrades\fe\etfront is under npm's control, in D:\EasyTrades\fe\etfront
+75 silly gentlyRm deletion target D:\EasyTrades\fe\etfront\node_modules\.bin\pm2-docker.cmd is under D:\EasyTrades\fe\etfront
+76 verbose gentlyRm vacuuming from D:\EasyTrades\fe\etfront\node_modules\.bin\pm2-docker.cmd up to D:\EasyTrades\fe\etfront
+77 silly vacuum-fs removing D:\EasyTrades\fe\etfront\node_modules\.bin\pm2.cmd
+78 silly vacuum-fs removing D:\EasyTrades\fe\etfront\node_modules\.bin\rundev.cmd
+79 silly vacuum-fs removing D:\EasyTrades\fe\etfront\node_modules\.bin\pm2-dev.cmd
+80 silly vacuum-fs removing D:\EasyTrades\fe\etfront\node_modules\.bin\pm2-docker.cmd
+81 silly vacuum-fs quitting because other entries in D:\EasyTrades\fe\etfront\node_modules\.bin
+82 silly gentlyRm D:\EasyTrades\fe\etfront\node_modules\.bin\pm2 is being gently removed
+83 silly gentlyRm verifying D:\EasyTrades\fe\etfront is an npm working directory
+84 silly gentlyRm containing path D:\EasyTrades\fe\etfront is under npm's control, in D:\EasyTrades\fe\etfront
+85 silly gentlyRm deletion target D:\EasyTrades\fe\etfront\node_modules\.bin\pm2 is under D:\EasyTrades\fe\etfront
+86 verbose gentlyRm vacuuming from D:\EasyTrades\fe\etfront\node_modules\.bin\pm2 up to D:\EasyTrades\fe\etfront
+87 silly vacuum-fs quitting because other entries in D:\EasyTrades\fe\etfront\node_modules\.bin
+88 silly gentlyRm D:\EasyTrades\fe\etfront\node_modules\.bin\rundev is being gently removed
+89 silly gentlyRm verifying D:\EasyTrades\fe\etfront is an npm working directory
+90 silly gentlyRm containing path D:\EasyTrades\fe\etfront is under npm's control, in D:\EasyTrades\fe\etfront
+91 silly gentlyRm deletion target D:\EasyTrades\fe\etfront\node_modules\.bin\rundev is under D:\EasyTrades\fe\etfront
+92 verbose gentlyRm vacuuming from D:\EasyTrades\fe\etfront\node_modules\.bin\rundev up to D:\EasyTrades\fe\etfront
+93 silly vacuum-fs quitting because other entries in D:\EasyTrades\fe\etfront\node_modules\.bin
+94 silly gentlyRm D:\EasyTrades\fe\etfront\node_modules\.bin\pm2-dev is being gently removed
+95 silly gentlyRm verifying D:\EasyTrades\fe\etfront is an npm working directory
+96 silly gentlyRm containing path D:\EasyTrades\fe\etfront is under npm's control, in D:\EasyTrades\fe\etfront
+97 silly gentlyRm deletion target D:\EasyTrades\fe\etfront\node_modules\.bin\pm2-dev is under D:\EasyTrades\fe\etfront
+98 verbose gentlyRm vacuuming from D:\EasyTrades\fe\etfront\node_modules\.bin\pm2-dev up to D:\EasyTrades\fe\etfront
+99 silly vacuum-fs quitting because other entries in D:\EasyTrades\fe\etfront\node_modules\.bin
+100 silly gentlyRm D:\EasyTrades\fe\etfront\node_modules\.bin\pm2-docker is being gently removed
+101 silly gentlyRm verifying D:\EasyTrades\fe\etfront is an npm working directory
+102 silly gentlyRm containing path D:\EasyTrades\fe\etfront is under npm's control, in D:\EasyTrades\fe\etfront
+103 silly gentlyRm deletion target D:\EasyTrades\fe\etfront\node_modules\.bin\pm2-docker is under D:\EasyTrades\fe\etfront
+104 verbose gentlyRm vacuuming from D:\EasyTrades\fe\etfront\node_modules\.bin\pm2-docker up to D:\EasyTrades\fe\etfront
+105 silly vacuum-fs removing D:\EasyTrades\fe\etfront\node_modules\.bin\pm2
+106 silly vacuum-fs removing D:\EasyTrades\fe\etfront\node_modules\.bin\rundev
+107 silly vacuum-fs removing D:\EasyTrades\fe\etfront\node_modules\.bin\pm2-dev
+108 silly vacuum-fs removing D:\EasyTrades\fe\etfront\node_modules\.bin\pm2-docker
+109 silly vacuum-fs removing D:\EasyTrades\fe\etfront\node_modules\.bin
+110 silly vacuum-fs removing D:\EasyTrades\fe\etfront\node_modules\.bin
+111 silly vacuum-fs removing D:\EasyTrades\fe\etfront\node_modules\.bin
+112 silly vacuum-fs removing D:\EasyTrades\fe\etfront\node_modules\.bin
+113 silly vacuum-fs unable to remove D:\EasyTrades\fe\etfront\node_modules\.bin due to EPERM: operation not permitted, rmdir 'D:\EasyTrades\fe\etfront\node_modules\.bin'
+114 silly vacuum-fs unable to remove D:\EasyTrades\fe\etfront\node_modules\.bin due to EPERM: operation not permitted, rmdir 'D:\EasyTrades\fe\etfront\node_modules\.bin'
+115 silly vacuum-fs quitting because other entries in D:\EasyTrades\fe\etfront\node_modules
+116 silly vacuum-fs quitting because other entries in D:\EasyTrades\fe\etfront\node_modules
+117 verbose unlock done using C:\Users\nuwan\AppData\Roaming\npm-cache\_locks\pm2-422afe426d8f2b5f.lock for D:\EasyTrades\fe\etfront\node_modules\pm2
+118 verbose stack Error: EPERM: operation not permitted, rmdir 'D:\EasyTrades\fe\etfront\node_modules\.bin'
+118 verbose stack     at Error (native)
+119 verbose cwd D:\EasyTrades\fe\etfront
+120 error Windows_NT 10.0.14393
+121 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "pm2" "--save"
+122 error node v4.4.5
+123 error npm  v2.15.5
+124 error path D:\EasyTrades\fe\etfront\node_modules\.bin
+125 error code EPERM
+126 error errno -4048
+127 error syscall rmdir
+128 error Error: EPERM: operation not permitted, rmdir 'D:\EasyTrades\fe\etfront\node_modules\.bin'
+128 error     at Error (native)
+128 error  { [Error: EPERM: operation not permitted, rmdir 'D:\EasyTrades\fe\etfront\node_modules\.bin']
+128 error   errno: -4048,
+128 error   code: 'EPERM',
+128 error   syscall: 'rmdir',
+128 error   path: 'D:\\EasyTrades\\fe\\etfront\\node_modules\\.bin' }
+129 error Please try running this command again as root/Administrator.
+130 verbose exit [ -4048, true ]
+131 verbose unbuild node_modules\pm2
+132 info preuninstall pm2@2.4.6
+133 info uninstall pm2@2.4.6
+134 verbose unbuild rmStuff pm2@2.4.6 from D:\EasyTrades\fe\etfront\node_modules
+135 silly gentlyRm D:\EasyTrades\fe\etfront\node_modules\.bin\pm2.cmd is being gently removed
+136 silly gentlyRm verifying D:\EasyTrades\fe\etfront is an npm working directory
+137 silly gentlyRm D:\EasyTrades\fe\etfront\node_modules\.bin\rundev.cmd is being gently removed
+138 silly gentlyRm verifying D:\EasyTrades\fe\etfront is an npm working directory
+139 silly gentlyRm D:\EasyTrades\fe\etfront\node_modules\.bin\pm2-dev.cmd is being gently removed
+140 silly gentlyRm verifying D:\EasyTrades\fe\etfront is an npm working directory
+141 silly gentlyRm D:\EasyTrades\fe\etfront\node_modules\.bin\pm2-docker.cmd is being gently removed
+142 silly gentlyRm verifying D:\EasyTrades\fe\etfront is an npm working directory
+143 silly gentlyRm containing path D:\EasyTrades\fe\etfront is under npm's control, in D:\EasyTrades\fe\etfront
+144 silly gentlyRm deletion target D:\EasyTrades\fe\etfront\node_modules\.bin\pm2.cmd is under D:\EasyTrades\fe\etfront
+145 verbose gentlyRm vacuuming from D:\EasyTrades\fe\etfront\node_modules\.bin\pm2.cmd up to D:\EasyTrades\fe\etfront
+146 silly gentlyRm containing path D:\EasyTrades\fe\etfront is under npm's control, in D:\EasyTrades\fe\etfront
+147 silly gentlyRm deletion target D:\EasyTrades\fe\etfront\node_modules\.bin\rundev.cmd is under D:\EasyTrades\fe\etfront
+148 verbose gentlyRm vacuuming from D:\EasyTrades\fe\etfront\node_modules\.bin\rundev.cmd up to D:\EasyTrades\fe\etfront
+149 silly gentlyRm containing path D:\EasyTrades\fe\etfront is under npm's control, in D:\EasyTrades\fe\etfront
+150 silly gentlyRm deletion target D:\EasyTrades\fe\etfront\node_modules\.bin\pm2-dev.cmd is under D:\EasyTrades\fe\etfront
+151 verbose gentlyRm vacuuming from D:\EasyTrades\fe\etfront\node_modules\.bin\pm2-dev.cmd up to D:\EasyTrades\fe\etfront
+152 silly gentlyRm containing path D:\EasyTrades\fe\etfront is under npm's control, in D:\EasyTrades\fe\etfront
+153 silly gentlyRm deletion target D:\EasyTrades\fe\etfront\node_modules\.bin\pm2-docker.cmd is under D:\EasyTrades\fe\etfront
+154 verbose gentlyRm vacuuming from D:\EasyTrades\fe\etfront\node_modules\.bin\pm2-docker.cmd up to D:\EasyTrades\fe\etfront
+155 silly gentlyRm D:\EasyTrades\fe\etfront\node_modules\.bin\pm2 is being gently removed
+156 silly gentlyRm verifying D:\EasyTrades\fe\etfront is an npm working directory
+157 silly gentlyRm containing path D:\EasyTrades\fe\etfront is under npm's control, in D:\EasyTrades\fe\etfront
+158 silly gentlyRm deletion target D:\EasyTrades\fe\etfront\node_modules\.bin\pm2 is under D:\EasyTrades\fe\etfront
+159 verbose gentlyRm vacuuming from D:\EasyTrades\fe\etfront\node_modules\.bin\pm2 up to D:\EasyTrades\fe\etfront
+160 silly gentlyRm D:\EasyTrades\fe\etfront\node_modules\.bin\rundev is being gently removed
+161 silly gentlyRm verifying D:\EasyTrades\fe\etfront is an npm working directory
+162 silly gentlyRm containing path D:\EasyTrades\fe\etfront is under npm's control, in D:\EasyTrades\fe\etfront
+163 silly gentlyRm deletion target D:\EasyTrades\fe\etfront\node_modules\.bin\rundev is under D:\EasyTrades\fe\etfront
+164 verbose gentlyRm vacuuming from D:\EasyTrades\fe\etfront\node_modules\.bin\rundev up to D:\EasyTrades\fe\etfront
+165 silly gentlyRm D:\EasyTrades\fe\etfront\node_modules\.bin\pm2-dev is being gently removed
+166 silly gentlyRm verifying D:\EasyTrades\fe\etfront is an npm working directory
+167 silly gentlyRm containing path D:\EasyTrades\fe\etfront is under npm's control, in D:\EasyTrades\fe\etfront
+168 silly gentlyRm deletion target D:\EasyTrades\fe\etfront\node_modules\.bin\pm2-dev is under D:\EasyTrades\fe\etfront
+169 verbose gentlyRm vacuuming from D:\EasyTrades\fe\etfront\node_modules\.bin\pm2-dev up to D:\EasyTrades\fe\etfront
+170 silly gentlyRm D:\EasyTrades\fe\etfront\node_modules\.bin\pm2-docker is being gently removed
+171 silly gentlyRm verifying D:\EasyTrades\fe\etfront is an npm working directory
+172 silly gentlyRm containing path D:\EasyTrades\fe\etfront is under npm's control, in D:\EasyTrades\fe\etfront
+173 silly gentlyRm deletion target D:\EasyTrades\fe\etfront\node_modules\.bin\pm2-docker is under D:\EasyTrades\fe\etfront
+174 verbose gentlyRm vacuuming from D:\EasyTrades\fe\etfront\node_modules\.bin\pm2-docker up to D:\EasyTrades\fe\etfront
+175 info postuninstall pm2@2.4.6
+176 silly gentlyRm D:\EasyTrades\fe\etfront\node_modules\pm2 is being purged from base D:\EasyTrades\fe\etfront
+177 verbose gentlyRm don't care about contents; nuking D:\EasyTrades\fe\etfront\node_modules\pm2
+178 silly vacuum-fs purging D:\EasyTrades\fe\etfront\node_modules\pm2
+179 silly vacuum-fs quitting because other entries in D:\EasyTrades\fe\etfront\node_modules

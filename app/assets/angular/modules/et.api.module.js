@@ -18,6 +18,16 @@
         'ngCookies'
     ]);
 
+    angular.module("etAPI")
+        .config(config);
+    config.$inject = ['$httpProvider'];
+    function config($httpProvider){
+        $httpProvider.defaults.headers.common = {};
+        $httpProvider.defaults.headers.post = {};
+        $httpProvider.defaults.headers.put = {};
+        $httpProvider.defaults.headers.patch = {};
+    }
+
     /* Authentication factory
      --------------------------------------------------------------------------- */
     angular.module("etAPI")
@@ -59,7 +69,7 @@
 
             //Set $http header with JWT auth token
             //not compulsory
-            $http.defaults.headers.common['Authentication'] = 'JWT ' + user.token;
+           // $http.defaults.headers.common['Authentication'] = 'JWT ' + user.token;
 
             //Set cookie
             $cookieStore.put('globals', $rootScope.globals);
@@ -139,10 +149,13 @@
      ------------------------------------------------------------------------------- */
     angular.module('etAPI')
         .factory('ServiceEmployee', ServiceEmployee);
-    ServiceEmployee.$inject = ['$http', '$cookieStore', '$rootScope', 'RESOURCE_URL'];
-    function ServiceEmployee($http, $cookieStore, $rootScope, RESOURCE_URL) {
+    ServiceEmployee.$inject = ['$http', '$cookieStore', '$rootScope', 'RESOURCE_URL','$httpProvider'];
+    function ServiceEmployee($http, $cookieStore, $rootScope, RESOURCE_URL,$httpProvider) {
         var ServiceEmployee = {};
         var responseJobs = {};
+
+        //$httpProvider.defaults.headers.common = {};
+        $httpProvider.defaults.headers.common['Authentication'] = 'JWT ' + user.token;
 
         /* Get profile user - Employee
          --------------------------------------------------------------------------- */
@@ -211,6 +224,8 @@
                     'Content-Type': "application/json",
                     'Authentication': 'JWT ' + $rootScope.globals.current_user.token
                 }
+
+
             }).then(function (success) {
                 callback(success);
             }, function (error) {

@@ -50,7 +50,7 @@
         .controller("ngHomeCtrl", ngHomeCtrl);
     ngHomeCtrl.$inject = ['$scope'];
     function ngHomeCtrl($scope) {
-        console.log("Home Controller");
+       // console.log("Home Controller");
     }
 
 
@@ -66,8 +66,8 @@
         /* User login
          ---------------------------------------------------------------------------------------- */
         var Login = this;
-        Login.email = "nuwansameerait@gmail.com";
-        Login.password = "test123";
+        Login.email;
+        Login.password;
         Login.login = function () {
             AuthService.Login(Login.email, Login.password, function (response) {
                 console.log(response);
@@ -78,9 +78,8 @@
                     };
                     //Set credentials//
                     AuthService.SetCredentials(LoggedUser);
-
                     //Redirect to my profile//
-                    $state.go("myProfile");
+                    $state.go("myBusinessHome");
                 } else {
                         console.log("error");
                 }
@@ -170,18 +169,13 @@
         Profile.locations = {};
         Profile.areas = {};
         Profile.other_user = {};
-
         Profile.ApplicantID = $stateParams.ApplicantID;
-
-
-
-
 
         /** Redirect non authenticated user to home / sign in
          ------------------------------------------------------------------------------------------------------- */
-        // if (!AuthService.isAuthenticated()) {
-        //     $state.go("home");
-        // };
+        if (!AuthService.isAuthenticated()) {
+            $state.go("home");
+        };
 
         /** Get profile user - employee
          ------------------------------------------------------------------------------------------------------- */
@@ -190,7 +184,7 @@
                 Profile.user = user.data;
             });
         }
-        ;
+
 
         /** Get profile other user
          ------------------------------------------------------------------------------------------------------- */

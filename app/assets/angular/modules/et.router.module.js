@@ -166,7 +166,8 @@
         var myBusinessHome = {
             name: 'myBusinessHome',
             url: '/my-business-home',
-            templateUrl: base + '/templates/my-business-home'
+            templateUrl: base + '/templates/my-business-home',
+            controller:'MyProfileEmployeeController'
         };
 
         var addLocation = {
